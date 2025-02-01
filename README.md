@@ -1,1 +1,3 @@
-# cs378-p2
+<<<<<<< HEAD
+
+>>>>>>> japanese-menu/main
