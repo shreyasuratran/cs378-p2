@@ -1,3 +1,4 @@
+
 .menu {
   display: flex;
   flex-direction: column;
@@ -17,6 +18,14 @@
   padding: 15px;
   width: 100%;
   max-width: 500px;
+}
+
+.menu-quantity {
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  min-width: 30px; 
+  text-align: center;
 }
 
 .menu-image {
@@ -81,13 +90,15 @@ h2 {
 .menu-add-button {
   background-color: goldenrod;
   color: darkslategray;
-  border-radius: 20px;
+  border: none;
+  border-radius: 50px; 
   font-weight: bold;
   text-align: center;
   cursor: pointer;
-  border: none;
-  font-size: 15px;
-  padding: 8px 20px;
+  font-size: 16px;
+  padding: 10px 20px;
+  transition: background-color 0.3s ease, transform 0.2s ease; 
+  box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.2); 
 }
 
 .menu-add-button:hover {
@@ -95,9 +106,102 @@ h2 {
   color: goldenrod;
 }
 
+.menu-button {
+  background-color: goldenrod;
+  color: darkslategray;
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.menu-button:hover {
+  background-color: gray;
+  color: goldenrod;
+  transform: scale(1.1);
+}
+
 img.logo{
   width: 400px;
   height: auto;
   display: block;
   margin: auto;
+}
+.cart-summary {
+  background-color: darkslategray;
+  color: white;
+  padding: 20px;
+  margin-top: 30px;
+  border-radius: 10px;
+  width: 80%;
+  max-width: 500px;
+  text-align: center;
+  box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.cart-summary {
+  background-color: darkslategray;
+  color: white;
+  padding: 20px;
+  margin: 30px auto;
+  border-radius: 10px;
+  width: 80%;
+  max-width: 500px;
+  text-align: center;
+  box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.3);
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+}
+
+.cart-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 10px;
+  margin: 5px 0;
+  border-radius: 8px;
+}
+
+.cart-total {
+  font-size: 20px;
+  font-weight: bold;
+  color: lightpink;
+  margin-top: 10px;
+}
+
+.cart-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.cart-button {
+  background-color: goldenrod;
+  color: darkslategray;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.cart-button:hover {
+  background-color: gray;
+  color: goldenrod;
+  transform: scale(1.05);
+}
+
+.empty-cart {
+  font-size: 18px;
+  color: lightpink;
+  margin-top: 10px;
 }
